@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massa Fina - Mostra de Massas Frescas Italianas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .bg-fundo {
+            background-image: url('fundo.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md fixed w-full z-10 top-0">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="logo.png" alt="Massa Fina Logo" class="h-10">
+                <span class="text-2xl font-bold text-gray-900">Massa Fina</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition duration-300">Início</a>
+                <a href="#cardapio" class="text-gray-600 hover:text-gray-900 transition duration-300">Cardápio</a>
+                <a href="#receita" class="text-gray-600 hover:text-gray-900 transition duration-300">Receita Base</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inicio" class="relative bg-fundo bg-cover bg-center h-screen flex items-center justify-center text-white">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative z-10 text-center p-6">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-down">Massa Fina</h1>
+            <p class="text-xl md:text-2xl font-light mb-8 animate-fade-in-up">Uma mostra de sabores e tradições italianas.</p>
+            <a href="#cardapio" class="bg-white text-gray-800 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                Explore o Cardápio
+            </a>
+        </div>
+    </main>
+
+    <section id="receita" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-900">A Base da Tradição</h2>
+            <p class="text-center text-gray-600 mb-12">Aprenda a receita da massa fresca que inspira todos os nossos pratos.</p>
+            
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Receita Tradicional de Massa Fresca</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-medium mb-2 text-gray-700">Ingredientes:</h4>
+                        <ul class="list-disc list-inside space-y-1 text-gray-600">
+                            <li>400g de farinha de trigo tipo 00</li>
+                            <li>4 ovos grandes</li>
+                            <li>1 pitada de sal</li>
+                            <li>1 colher de sopa de azeite extra virgem</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-medium mb-2 text-gray-700">Modo de Preparo:</h4>
+                        <ol class="list-decimal list-inside space-y-2 text-gray-600">
+                            <li>Em uma tigela grande ou superfície limpa, faça um monte com a farinha e um buraco no centro.</li>
+                            <li>Adicione os ovos, o sal e o azeite no buraco.</li>
+                            <li>Com um garfo, bata os ovos aos poucos, incorporando a farinha das bordas.</li>
+                            <li>Quando a massa estiver firme o suficiente, comece a sovar com as mãos por cerca de 10-15 minutos, até ficar lisa e elástica.</li>
+                            <li>Forme uma bola, cubra com filme plástico e deixe descansar por 30 minutos em temperatura ambiente.</li>
+                            <li>Abra a massa com um rolo ou máquina de macarrão, cortando no formato desejado.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cardapio" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-gray-900">Nosso Cardápio</h2>
+            <p class="text-center text-gray-600 mb-12">Descubra os pratos inspirados na tradição italiana, todos feitos com massa fresca.</p>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <a href="#" class="card bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Ravioli de Ricota e Espinafre</h3>
+                    <p class="text-gray-600 mb-4">Massa delicada recheada com um clássico cremoso.</p>
+                    <div class="text-left mt-4 space-y-2 text-sm text-gray-700">
+                        <p><strong>Ingredientes:</strong> Ricota fresca, espinafre, noz-moscada, queijo parmesão.</p>
+                        <p><strong>Modo de Preparo:</strong> Recheio cozido e refogado, selado na massa, servido com manteiga e sálvia.</p>
+                    </div>
+                </a>
+                
+                <a href="#" class="card bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Capeletti In Brodo</h3>
+                    <p class="text-gray-600 mb-4">Pequenos chapéus de massa em um caldo reconfortante.</p>
+                    <div class="text-left mt-4 space-y-2 text-sm text-gray-700">
+                        <p><strong>Ingredientes:</strong> Carne bovina, frango, queijo parmesão, noz-moscada.</p>
+                        <p><strong>Modo de Preparo:</strong> Recheio de carne cozido lentamente, capeletti cozido em um caldo de galinha robusto.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="card bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Talharim à Bolonhesa</h3>
+                    <p class="text-gray-600 mb-4">A clássica combinação de massa longa e molho de carne.</p>
+                    <div class="text-left mt-4 space-y-2 text-sm text-gray-700">
+                        <p><strong>Ingredientes:</strong> Carne moída, tomate, cebola, cenoura, vinho tinto, ervas.</p>
+                        <p><strong>Modo de Preparo:</strong> Molho lento e saboroso, cozido por horas para apurar o sabor, servido sobre a massa fresca.</p>
+                    </div>
+                </a>
+
+                <a href="#" class="card bg-white rounded-lg shadow-lg p-6 text-center transition duration-300 transform hover:scale-105">
+                    <h3 class="text-2xl font-bold mb-2">Nhoque de Batata ao Sugo</h3>
+                    <p class="text-gray-600 mb-4">Almofadas de batata macias com um molho de tomate vibrante.</p>
+                    <div class="text-left mt-4 space-y-2 text-sm text-gray-700">
+                        <p><strong>Ingredientes:</strong> Batatas, farinha de trigo, ovos. Molho: tomate, alho, manjericão.</p>
+                        <p><strong>Modo de Preparo:</strong> Nhoque cozido até flutuar, servido com um molho de tomate simples e fresco.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex flex-col items-center mb-4">
+                <img src="logo.png" alt="Massa Fina Logo" class="h-10 mb-2">
+                <p class="text-lg font-bold">Massa Fina</p>
+            </div>
+            <p>&copy; 2025 Massa Fina. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
